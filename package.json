@@ -36,6 +36,7 @@
     "plugins": [
       "prettier-plugin-tailwindcss"
     ],
-    "singleQuote": true
+    "singleQuote": true,
+    "printWidth": 80
   }
 }
