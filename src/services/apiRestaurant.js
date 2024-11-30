@@ -1,5 +1,4 @@
 const API_URL = 'https://react-fast-pizza-api.onrender.com/api';
-
 export async function getMenu(controller = null) {
   if (controller?.current) controller.current.abort(); // Abort if a controller exists
   if (controller) controller.current = new AbortController(); // Initialize new AbortController if provided

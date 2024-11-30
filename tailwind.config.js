@@ -8,7 +8,14 @@ export default {
     fontFamily:{
       sans:'Roboto Mono, monospace',
     },
-    extend: {},
+    extend: {
+      colors:{
+        wierdNewColor:"#12345"
+      },
+      height:{
+        screen:'100dvh',
+      }
+    },
   },
   plugins: [],
 }
