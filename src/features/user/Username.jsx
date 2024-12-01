@@ -1,7 +1,7 @@
 import { useDispatch, useSelector } from "react-redux";
-import { updateName } from "./userSlice";
+import { getUserName, updateName } from "./userSlice";
 function Username({children}) {
-  const username = useSelector(store => store.user.username)
+  const username = useSelector(getUserName)
   if(!username) return null
   return (
     <p className="hidden text-sm font-semibold md:block">

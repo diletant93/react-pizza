@@ -33,6 +33,7 @@ const fakeCart = [
 function Cart() {
   const dispatch = useDispatch()
   const cart = useSelector(getCart)
+  console.log(cart)
   const username = useSelector(getUserName)
   function handleClearCart(){
     dispatch(clearCart())
@@ -50,7 +51,7 @@ function Cart() {
       <h2 className='mt-7 text-lg font-semibold'>Your cart, {username}</h2>
       <ul className='divide-y divide-stone-200'>
         {cart.map((item,index) => (
-          <CartItem item={item} pizzaId={item.pizzaId} key={index}/>
+          <CartItem item={item} key={index}/>
         ))}
       </ul>
       <div className='mt-6 space-x-2'>
